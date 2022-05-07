@@ -9,6 +9,17 @@ header {
 nav ul {
   list-style-type: none;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
+}
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 600px) {
+  nav ul{
+    flex-direction: row;
+  }
 }
